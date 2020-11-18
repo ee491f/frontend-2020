@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -12,6 +11,33 @@
   </head>
 
   <body>
+    <header>
+      <nav>
+        <a href="files/filename.txt" download >Link to filename.txt</a> 
+        <a class="important" href="files/index.html">Link to files</a>
+        <a href="files/file.docx" download >Link to file.docx</a>
+        <a class="important" href="filename.html">Link to filename.html</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="outer">
+          <div class="inner">
+            <button function="hide">Hide all links</button>
+          </div>
+          <div class="inner">
+            <button function="show">Show all links</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+       <p id="first" class="fall">
+        copyright 2020
+      </p>
+    </footer>
     <script src="vendor/jquery-3.5.1.min.js"></script>
     <script src="files/example.js"></script>
   </body>
