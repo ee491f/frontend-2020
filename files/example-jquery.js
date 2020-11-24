@@ -8,7 +8,16 @@ $( document ).ready(function() {
   });
 
   $('[function=background-switcher] [type=button]').on("click", function(event) {
+    let badColors = [
+      'black',
+      'white',
+    ];
     let color = $("[function=background-switcher] [type=text][name=color]").val();
-    let switchableBackground = $('[function=background-switcher]').css("background-color", color);
+    if (badColors.includes(color)) {
+      $("[function=background-switcher] .warning").fadeIn();
+    } else {
+      $("[function=background-switcher] .warning").fadeOut();
+      $('[function=background-switcher]').css("background-color", color);
+    }
   });
 });
