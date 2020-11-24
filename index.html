@@ -36,6 +36,19 @@
           </div>
         </div>
       </section>
+      <section function="background-switcher">
+        <label for="color">Color:</label><br/>
+        <input type="text" name="color" value="white"><br>
+        <button type="button">
+          Change Background Color
+        </button>
+        <p class="warning bad-color">
+          Sorry, color is bad
+        </p>
+        <p class="warning unknown-color">
+          Sorry, color is not recognized
+        </p>
+      </section>
     </main>
 
     <footer>
@@ -44,6 +57,7 @@
       </p>
     </footer>
     <script src="vendor/jquery-3.5.1.min.js"></script>
+    <script src="files/color-switcher.js"></script>
     <script src="files/example-jquery.js"></script>
     <!--script src="files/example-javascript.js"></script-->
   </body>

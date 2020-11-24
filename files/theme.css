@@ -4,3 +4,6 @@ p {
 .important {
   color: red;
 }
+.warning {
+  display: none;
+}
