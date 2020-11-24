@@ -7,8 +7,7 @@ $( document ).ready(function() {
     $('a').fadeIn();
   });
 
-  $('[function=background-switcher] [type=submit]').on("click", function(event) {
-    event.preventDefault();
+  $('[function=background-switcher] [type=button]').on("click", function(event) {
     let color = $("[function=background-switcher] [type=text][name=color]").val();
     let switchableBackground = $('[function=background-switcher]').css("background-color", color);
   });
