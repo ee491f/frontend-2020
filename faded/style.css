@@ -46,8 +46,4 @@ considerations:
   height: 100%;
   opacity: 0.3;
 }
-.faded .absolute-positioned-image-workaround h1,
-.faded .absolute-positioned-image-workaround p {
-  position: relative;
-  z-index: 100;
-}
+
