@@ -1,0 +1,49 @@
+.faded .problem {
+  background-image: url("https://image.freepik.com/free-vector/abstract-geometric-gradient-background_78532-316.jpg");
+  opacity: 0.2;
+}
+.faded .problem-statement {
+  color: white;
+}
+.faded .background-color {
+  background-color: rgba(0 , 0, 0, 0.1);
+}
+
+/*
+based off of:
+  https://coder-coder.com/background-image-opacity/
+  https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity  
+considerations:
+  avoiding using z-index to keep things simpler
+*/
+.faded .psuedo-element-workaround {
+  position: relative; 
+}
+.faded .psuedo-element-workaround::before {
+  content: "";
+  background-image: url("https://image.freepik.com/free-vector/abstract-geometric-gradient-background_78532-316.jpg");
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+/*
+based off of:
+  https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity  
+considerations:
+  a background-image css property is more representative of what we are trying to accomplish than hacking an image to look like a background
+  hence, the above method would be preferred over this method
+*/
+.faded .absolute-positioned-image-workaround {
+  position: relative;
+}
+.faded .absolute-positioned-image-workaround img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
